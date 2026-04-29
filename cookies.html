@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>YardNirvana Greens | Cookies Policy – Sowing Digital Transparency</title>
+  <meta name="description" content="YardNirvana Greens Cookies Policy explains how we use cookies, tracking technologies, and similar tools to improve your gardening experience. Opt-in choices & transparency.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: linear-gradient(145deg, #fff9ef 0%, #fff3e0 100%);
+      color: #2d2418;
+      line-height: 1.5;
+    }
+
+    :root {
+      --fire-red: #c22b1f;
+      --golden-yellow: #f5b81b;
+      --deep-amber: #b45309;
+      --warm-sand: #fff1cf;
+      --burnt-red: #9f2a1f;
+      --sunray: #ffd966;
+      --soil-brown: #4a3520;
+    }
+
+    .top-bar {
+      background: var(--fire-red);
+      color: white;
+      padding: 0.6rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      font-weight: 500;
+      gap: 1rem;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fff0b5, #ffe3a3);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+    .logo span {
+      color: var(--golden-yellow);
+      background: none;
+      -webkit-background-clip: unset;
+      background-clip: unset;
+      text-shadow: none;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: 0.2s;
+      border-bottom: 2px solid transparent;
+    }
+    .nav-links a:hover {
+      border-bottom-color: var(--golden-yellow);
+      color: #ffe2a4;
+    }
+    .nav-links li {
+      display: inline-block;
+      list-style: none;
+    }
+
+    .hero-sub {
+      background: linear-gradient(107deg, #fdebb3 0%, #ffda88 100%);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      border-bottom: 5px solid var(--fire-red);
+    }
+    .hero-sub h1 {
+      font-size: 2.8rem;
+      color: var(--fire-red);
+      text-shadow: 2px 2px 0 rgba(255,215,0,0.4);
+      margin-bottom: 0.75rem;
+    }
+    .hero-sub p {
+      font-size: 1.2rem;
+      max-width: 750px;
+      margin: 0 auto;
+      color: #2c241a;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .privacy-card {
+      background: #fffcf5;
+      border-radius: 36px;
+      padding: 2.5rem;
+      box-shadow: 0 20px 35px rgba(0,0,0,0.05);
+      border: 1px solid #ffe2b5;
+      margin: 2rem 0;
+    }
+    .privacy-card h2 {
+      font-size: 1.9rem;
+      color: var(--fire-red);
+      margin-top: 1.8rem;
+      margin-bottom: 1rem;
+      border-left: 6px solid var(--golden-yellow);
+      padding-left: 1rem;
+    }
+    .privacy-card h2:first-of-type {
+      margin-top: 0;
+    }
+    .privacy-card h3 {
+      font-size: 1.4rem;
+      color: var(--deep-amber);
+      margin: 1.5rem 0 0.5rem 0;
+    }
+    .privacy-card p, .privacy-card li {
+      font-size: 1.02rem;
+      margin-bottom: 0.75rem;
+      color: #3e2c1c;
+      line-height: 1.6;
+    }
+    .privacy-card ul, .privacy-card ol {
+      margin-left: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .privacy-card li {
+      margin-bottom: 0.4rem;
+    }
+    .privacy-card strong {
+      color: var(--burnt-red);
+    }
+    .badge-note {
+      background: #fff1cf;
+      padding: 1rem 1.5rem;
+      border-radius: 28px;
+      margin: 1.5rem 0;
+      border-left: 5px solid var(--fire-red);
+      font-size: 0.95rem;
+    }
+    .cookie-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.2rem 0;
+      background: #fffef7;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .cookie-table th, .cookie-table td {
+      border: 1px solid #ffe2b5;
+      padding: 0.9rem 1rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    .cookie-table th {
+      background-color: #fff0d6;
+      color: var(--burnt-red);
+      font-weight: 700;
+    }
+    .btn-cookie-pref {
+      display: inline-block;
+      background: var(--fire-red);
+      color: white;
+      border: none;
+      padding: 0.7rem 1.6rem;
+      border-radius: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: 0.2s;
+      margin-top: 0.5rem;
+      margin-right: 0.8rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .btn-cookie-pref:hover {
+      background: #9f2a1f;
+      transform: translateY(-1px);
+    }
+    .btn-outline-cookie {
+      background: transparent;
+      border: 2px solid var(--fire-red);
+      color: var(--fire-red);
+    }
+    .btn-outline-cookie:hover {
+      background: var(--fire-red);
+      color: white;
+    }
+    .last-updated {
+      font-style: italic;
+      font-size: 0.85rem;
+      text-align: right;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ffdea5;
+      color: #7a5d3c;
+    }
+    .footer {
+      background: #2d1f12;
+      color: #ffecb3;
+      padding: 2.5rem 2rem;
+      margin-top: 3rem;
+      border-top: 6px solid var(--golden-yellow);
+    }
+    .footer-content {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .footer-address h4, .footer-contact h4 {
+      color: var(--golden-yellow);
+      margin-bottom: 0.7rem;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+    }
+    a {
+      color: var(--golden-yellow);
+      text-decoration: none;
+    }
+    .garden-badge {
+      background: #fef1cf;
+      padding: 0.3rem 0.9rem;
+      border-radius: 50px;
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 700px) {
+      .hero-sub h1 { font-size: 2rem; }
+      .top-bar { flex-direction: column; text-align: center; }
+      .nav-links a { margin: 0 0.6rem; }
+      .privacy-card { padding: 1.5rem; }
+      .cookie-table th, .cookie-table td { padding: 0.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="logo">🌿 YardNirvana <span>Greens</span></div>
+  <div class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="terms.html">Terms Of Privacy</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="cookies.html">Cookies Policy</a></li>
+  </div>
+</div>
+
+<section class="hero-sub">
+  <h1>🍪 Cookies with Clarity</h1>
+  <p>Just like seeds need the right environment to grow, our website uses cookies to enhance your experience. Learn how we use them, your preferences, and how to cultivate a cookie setting that respects your privacy.</p>
+  <div class="garden-badge" style="margin-top: 1rem;">🌾 Last Review: April 2026 | ePrivacy + GDPR Compliant 🌻</div>
+</section>
+
+<div class="container">
+  <div class="privacy-card">
+    <h2>🍪 Understanding Our Digital Soil: Cookies</h2>
+    <p>At <strong>YardNirvana Greens</strong>, we believe in transparent and ethical gardening — both in nature and online. Cookies and similar tracking technologies help our website function properly, remember your preferences (like your favorite plant hardiness zone), and improve site performance. This Cookie Policy explains what cookies are, which ones we use, and how you can manage your consent.</p>
+    
+    <div class="badge-note">
+      🌱 <strong>Short bites:</strong> We use essential, functional, analytics, and optional marketing cookies. You can adjust your preferences at any time via our cookie consent tool or browser settings. We never use invasive tracking without your permission.
+    </div>
+
+    <h2>📌 1. What Are Cookies?</h2>
+    <p>Cookies are small text files stored on your device (computer, smartphone, tablet) when you visit a website. They allow the site to recognize your device, store preferences, and gather anonymous data about how you interact with our content. Think of them like plant markers — they help us remember where we planted what, making your experience bloom seamlessly.</p>
+
+    <h2>🍪 2. Types of Cookies We Use</h2>
+    <p>YardNirvana Greens uses a balanced mix of first-party and third-party cookies, categorized by purpose:</p>
+    
+    <table class="cookie-table">
+      <thead>
+        <tr><th>Cookie Category</th><th>Purpose</th><th>Examples / Duration</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Strictly Necessary</strong><br>(Essential)</td><td>Required for basic site functionality: navigation, secure login, shopping cart, and form submissions. You cannot opt out of these.</td><td>session cookies, csrf tokens, cart ID. Expire after session or up to a few hours.</td></tr>
+        <tr><td><strong>Performance & Analytics</strong></td><td>Help us understand how visitors engage with our site (e.g., pages visited, time spent). We use anonymized data to improve gardening guides and user flow.</td><td>Google Analytics (_ga, _gid) – retained up to 2 years. First-party analytics.</td></tr>
+        <tr><td><strong>Functional & Preference</strong></td><td>Remember your choices like language, plant hardiness zone, or "remember me" features. Provide enhanced, personalized gardening tips.</td><td>zone_pref, user_locale – duration up to 12 months.</td></tr>
+        <tr><td><strong>Targeting / Advertising</strong></td><td>Limit usage: we may show relevant gardening offers or seasonal reminders (only with your explicit consent). These cookies track browsing across sites to deliver tailored ads.</td><td>Optional. Placed via social media or ad partners only if you accept.</td></tr>
+      </tbody>
+    </table>
+    
+    <h3>🪴 Third-Party Cookies</h3>
+    <p>We partner with trusted services like YouTube (for plant care video tutorials) and social sharing tools (Pinterest, Instagram). These providers may set cookies when you interact with embedded content. We do not control their settings; refer to their own cookie policies. Review our <a href="privacy.html" style="color:#c22b1f;">Privacy Policy</a> for third-party details.</p>
+
+    <h2>⚙️ 3. Managing Your Cookie Preferences</h2>
+    <p>You are in control. You can manage cookies in several ways:</p>
+    <ul>
+      <li><strong>Cookie Consent Banner:</strong> When you first visit YardNirvana Greens, a cookie banner allows you to accept all, reject non-essential, or customize categories.</li>
+      <li><strong>Browser Settings:</strong> Most browsers let you block/delete cookies via privacy settings. However, disabling essential cookies may impair site features (like checkout).</li>
+      <li><strong>Withdraw Consent:</strong> Click the "Cookie Settings" floating button (bottom-left corner on our site) or adjust preferences below.</li>
+    </ul>
+    <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0;">
+      <button id="acceptEssentialBtn" class="btn-cookie-pref">✅ Accept Only Essential</button>
+      <button id="acceptAllBtn" class="btn-cookie-pref">🌿 Accept All Cookies</button>
+      <button id="resetPrefBtn" class="btn-cookie-pref btn-outline-cookie">🔄 Reset Preferences</button>
+    </div>
+    <p class="badge-note" style="margin-top: 0.5rem;">🍅 <strong>Note:</strong> The buttons above simulate preference management for this demo. In production, these would integrate with a real consent management platform (CMP). Your actual choices are stored for 6 months.</p>
+    
+    <h2>📊 4. Specific Cookies on YardNirvana Greens</h2>
+    <p>Here is a detailed list of primary cookies we deploy — reflecting our commitment to transparency:</p>
+    <ul>
+      <li><strong>gardener_session</strong> (Necessary): Maintains your logged-in state or shopping cart. Expires at end of session.</li>
+      <li><strong>yg_zone_memory</strong> (Functional): Stores your gardening zone (e.g., 7b) to customize planting calendar suggestions. Persists for 365 days.</li>
+      <li><strong>_ga / _ga_*</strong> (Analytics): Google Analytics cookies used to distinguish unique users and throttle request rate. Retention: 2 years.</li>
+      <li><strong>cookie_consent_status</strong> (Essential): Remembers your cookie preferences and consents. Duration: 6 months.</li>
+      <li><strong>yt-remote-device-id</strong> (Functional): Set by YouTube for embedded garden tutorials, persistent until browser cache cleared.</li>
+      <li><strong>yardnirvana_campaign_ref</strong> (Marketing, optional): Tracks referral campaigns or special promotions only if opted-in. Retention 90 days.</li>
+    </ul>
+    
+    <h2>🤝 5. Your Rights & Choices Under ePrivacy & GDPR</h2>
+    <p>As a user from the EU, UK, or other privacy-protective regions, you have the right to:</p>
+    <ul>
+      <li>Withdraw consent for non-essential cookies at any time.</li>
+      <li>Receive clear information about cookie storage before consent.</li>
+      <li>Opt out of analytics cookies via your browser “Do Not Track” settings, or using Google’s opt-out add-on.</li>
+      <li>Request a copy of any personal data linked to cookie identifiers (see our <a href="privacy.html">Privacy Policy</a>).</li>
+    </ul>
+    <p>To exercise these rights, email <strong>privacy@yardnirvanagreens.com</strong> or use our live chat support.</p>
+    
+    <h2>📅 6. Updates to This Cookie Policy</h2>
+    <p>We may update this Cookies Policy to reflect changes in technology, regulation, or our business practices. Any update will be posted on this page with a revised "Last Updated" date. Significant changes will be notified via a website notice or email (if you have an account). We encourage you to review this page occasionally.</p>
+    
+    <h2>📬 7. Contact Our Data Garden Officer (Cookie Inquiries)</h2>
+    <p>If you have questions about our cookie usage, wish to file a complaint, or need assistance managing your tracking preferences, please contact:</p>
+    <p><strong>YardNirvana Greens – Privacy & Cookie Compliance</strong><br>
+    142 Blossom Grove Lane, Suite A, Willowdale, Meadowridge County, CA 94025, United States<br>
+    Email: <a href="mailto:cookies@yardnirvanagreens.com" style="color:#c22b1f;">cookies@yardnirvanagreens.com</a><br>
+    Phone: <a href="tel:+18885573342" style="color:#c22b1f;">+1 (888) 557-3342</a> ext. 705</p>
+    <p>For unresolved concerns, you may lodge a complaint with the Information Commissioner's Office (UK) or your local data protection authority.</p>
+    
+    <div class="last-updated">
+      🍪 Last Updated: April 15, 2026 | Version 1.4 – "Conscious Cultivation of Cookies"
+    </div>
+  </div>
+
+  <!-- additional trust and clear consent illustration -->
+  <div style="background: #fff1cf; border-radius: 32px; padding: 1.5rem; margin: 1rem 0 2rem; display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; align-items: center;">
+    <div>
+      <span style="font-size: 2rem;">🍪</span>
+      <strong style="color: #b44c09;">Transparency by default</strong><br>Cookie statements you can actually understand.
+    </div>
+    <div>
+      <span style="font-size: 2rem;">⚖️</span>
+      <strong style="color: #b44c09;">One-click consent revocation</strong><br>Change your mind anytime.
+    </div>
+    <div>
+      <span style="font-size: 2rem;">🌿</span>
+      <strong style="color: #b44c09;">No creepy tracking</strong><br>We respect your digital soil health.
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-address">
+      <h4>📍 YardNirvana Greens HQ</h4>
+      <p>142 Blossom Grove Lane, Suite A<br>Willowdale, Meadowridge County, CA 94025<br>United States</p>
+    </div>
+    <div class="footer-contact">
+      <h4>📞 Contact & Support</h4>
+      <p>Phone: <a href="tel:+18885573342">+1 (888) 557-3342</a><br>Email: hello@yardnirvanagreens.com<br>Mon-Fri 9am–6pm PST</p>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2026 YardNirvana Greens — Cultivating Radiance Since 2012. All rights reserved. 🌱 Cookie governance with a gardener's heart.
+  </div>
+</footer>
+
+<script>
+  // Simulated cookie preference management (UI demonstration & localStorage demo)
+  // For full integration, these would interact with a real CMP.
+  (function() {
+    // Helper to show toast-like alert (non-intrusive notification)
+    function notifyUser(message, isSuccess = true) {
+      let notif = document.createElement('div');
+      notif.innerText = message;
+      notif.style.position = 'fixed';
+      notif.style.bottom = '20px';
+      notif.style.right = '20px';
+      notif.style.backgroundColor = isSuccess ? '#2c5f2d' : '#c22b1f';
+      notif.style.color = 'white';
+      notif.style.padding = '12px 20px';
+      notif.style.borderRadius = '40px';
+      notif.style.fontWeight = 'bold';
+      notif.style.zIndex = '9999';
+      notif.style.boxShadow = '0 5px 15px rgba(0,0,0,0.2)';
+      notif.style.fontFamily = 'inherit';
+      document.body.appendChild(notif);
+      setTimeout(() => { notif.remove(); }, 3000);
+    }
+
+    // Simulate setting consent in local storage + dummy event (to mimic preferences)
+    function setCookiePreference(prefType) {
+      // Store an object in localStorage to represent consent state (for demonstration)
+      let consent = {
+        essential: true,
+        functional: false,
+        analytics: false,
+        marketing: false,
+        lastUpdated: new Date().toISOString()
+      };
+      if (prefType === 'essential') {
+        consent.functional = false;
+        consent.analytics = false;
+        consent.marketing = false;
+        notifyUser('🍃 Essential cookies only saved. Functional & analytics cookies disabled.', true);
+      } else if (prefType === 'all') {
+        consent.functional = true;
+        consent.analytics = true;
+        consent.marketing = true;
+        notifyUser('🌻 All cookies accepted! You can change preferences anytime. Thank you for trusting YardNirvana.', true);
+      } else if (prefType === 'reset') {
+        // reset to default 'undecided' (simulate banner re-prompt)
+        localStorage.removeItem('yardnirvana_cookie_consent');
+        notifyUser('🔄 Cookie preferences reset. On your next visit the consent banner will reappear (simulated).', true);
+        return;
+      }
+      localStorage.setItem('yardnirvana_cookie_consent', JSON.stringify(consent));
+      // Additional simulated console log for transparency
+      console.log('[YardNirvana] Cookie preferences updated:', consent);
+    }
+
+    const essentialBtn = document.getElementById('acceptEssentialBtn');
+    const allBtn = document.getElementById('acceptAllBtn');
+    const resetBtn = document.getElementById('resetPrefBtn');
+
+    if (essentialBtn) {
+      essentialBtn.addEventListener('click', () => setCookiePreference('essential'));
+    }
+    if (allBtn) {
+      allBtn.addEventListener('click', () => setCookiePreference('all'));
+    }
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => setCookiePreference('reset'));
+    }
+
+    // For demo: on page load, check if any consent exists, log it (no forced banner)
+    const storedConsent = localStorage.getItem('yardnirvana_cookie_consent');
+    if (storedConsent) {
+      // Just for transparency
+      console.log('[YardNirvana] Existing consent found in localStorage:', JSON.parse(storedConsent));
+    } else {
+      console.log('[YardNirvana] No cookie preference set yet; banner would be shown.');
+    }
+    
+    // add smooth scroll on anchor links (internal page use)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if(targetId && targetId !== '#') {
+          const target = document.querySelector(targetId);
+          if(target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>YardNirvana Greens | About Our Red & Yellow Garden Story</title>
+  <meta name="description" content="YardNirvana Greens – about our fiery gardening philosophy, founder story, sustainable mission, and the passion behind red & yellow horticulture.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: linear-gradient(145deg, #fff9ef 0%, #fff3e0 100%);
+      color: #2d2418;
+      line-height: 1.5;
+    }
+
+    /* red & yellow theme core */
+    :root {
+      --fire-red: #c22b1f;
+      --golden-yellow: #f5b81b;
+      --deep-amber: #b45309;
+      --warm-sand: #fff1cf;
+      --burnt-red: #9f2a1f;
+      --sunray: #ffd966;
+      --soil-brown: #4a3520;
+    }
+
+    /* header & nav */
+    .top-bar {
+      background: var(--fire-red);
+      color: white;
+      padding: 0.6rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      font-weight: 500;
+      gap: 1rem;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fff0b5, #ffe3a3);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+    .logo span {
+      color: var(--golden-yellow);
+      background: none;
+      -webkit-background-clip: unset;
+      background-clip: unset;
+      text-shadow: none;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: 0.2s;
+      border-bottom: 2px solid transparent;
+    }
+    .nav-links a:hover {
+      border-bottom-color: var(--golden-yellow);
+      color: #ffe2a4;
+    }
+
+    /* hero about section */
+    .about-hero {
+      background: linear-gradient(120deg, var(--golden-yellow) 0%, #ffcc4d 100%);
+      padding: 3rem 2rem;
+      text-align: center;
+      border-bottom: 5px solid var(--fire-red);
+    }
+    .about-hero h1 {
+      font-size: 3rem;
+      color: var(--fire-red);
+      text-shadow: 2px 2px 0 rgba(255,215,0,0.6);
+      margin-bottom: 1rem;
+    }
+    .about-hero p {
+      font-size: 1.3rem;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #2c241a;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      border-left: 7px solid var(--fire-red);
+      padding-left: 1rem;
+      margin: 2rem 0 1.5rem 0;
+      color: var(--soil-brown);
+    }
+
+    /* story card / mission grid */
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .story-card {
+      background: white;
+      border-radius: 28px;
+      padding: 1.8rem;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.05);
+      transition: all 0.2s ease;
+      border-bottom: 4px solid var(--golden-yellow);
+    }
+    .story-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 30px rgba(194,43,31,0.12);
+    }
+    .story-icon {
+      font-size: 2.8rem;
+      margin-bottom: 0.8rem;
+    }
+    .story-card h3 {
+      font-size: 1.7rem;
+      color: var(--fire-red);
+      margin-bottom: 1rem;
+    }
+    .story-card p {
+      color: #3e2e20;
+    }
+
+    .highlight-red {
+      color: var(--fire-red);
+      font-weight: 700;
+    }
+    .highlight-yellow {
+      background: #fef1cf;
+      padding: 0.2rem 0.4rem;
+      border-radius: 12px;
+      color: #b9570c;
+      font-weight: 500;
+    }
+
+    .team-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .team-member {
+      background: #fffcf5;
+      border-radius: 40px;
+      padding: 1.5rem;
+      text-align: center;
+      width: 260px;
+      border: 1px solid #ffe2b5;
+      transition: all 0.2s;
+    }
+    .team-avatar {
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, var(--fire-red), var(--golden-yellow));
+      border-radius: 100%;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.2rem;
+      color: white;
+      box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    }
+    .team-member h4 {
+      font-size: 1.4rem;
+      color: var(--fire-red);
+    }
+    .testimonial-block {
+      background: #fff9ef;
+      border-radius: 32px;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-left: 8px solid var(--golden-yellow);
+      font-style: italic;
+    }
+
+    .stats-badge {
+      background: #ffe6bb;
+      border-radius: 40px;
+      padding: 0.3rem 1rem;
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: var(--fire-red);
+    }
+
+    .footer {
+      background: #2d1f12;
+      color: #ffecb3;
+      padding: 2.5rem 2rem;
+      margin-top: 3rem;
+      border-top: 6px solid var(--golden-yellow);
+    }
+    .footer-content {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .footer-address, .footer-contact {
+      line-height: 1.7;
+    }
+    .footer-address h4, .footer-contact h4 {
+      color: var(--golden-yellow);
+      margin-bottom: 0.7rem;
+      font-size: 1.2rem;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #ddb76e;
+    }
+    a {
+      color: var(--golden-yellow);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .about-hero h1 { font-size: 2rem; }
+      .nav-links a { margin: 0 0.6rem; }
+      .top-bar { flex-direction: column; text-align: center; }
+    }
+
+    .accent-border {
+      background: linear-gradient(90deg, var(--fire-red), var(--golden-yellow));
+      height: 4px;
+      width: 80px;
+      margin: 1rem 0;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="logo">🌿 YardNirvana <span>Greens</span></div>
+  <div class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="terms.html">Terms Of Privacy</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="cookies.html">Cookies Policy</a></li>
+  </div>
+</div>
+
+<section class="about-hero">
+  <h1>🔥 About YardNirvana Greens 🔆</h1>
+  <p>Rooted in passion, blooming with purpose — the story behind our red & yellow gardening revolution.</p>
+  <div class="stats-badge" style="margin-top: 1rem;">🌻 Founded 2012 • 350+ community gardens inspired • 100% organic ethos</div>
+</section>
+
+<div class="container">
+  <!-- Our story & mission section -->
+  <div>
+    <h2 class="section-title">🌱 Our Cultivation Story</h2>
+    <div class="story-grid">
+      <div class="story-card">
+        <div class="story-icon">🌿🔥</div>
+        <h3>From Ember to Eden</h3>
+        <p>Founded in 2012 by horticulturist <strong class="highlight-red">Maya Redfern</strong>, YardNirvana Greens began as a tiny urban sanctuary in Willowdale. Obsessed with the emotional power of <span class="highlight-yellow">fiery red blooms and radiant gold foliage</span>, Maya transformed nondescript lots into pollinator havens. Today, we’re a global collective of designers, master gardeners, and plant lovers dedicated to sustainable beauty.</p>
+      </div>
+      <div class="story-card">
+        <div class="story-icon">🎯❤️💛</div>
+        <h3>Mission: Vibrant Resilience</h3>
+        <p>We merge <strong>bold color psychology</strong> with regenerative practices. Our mission: empower every gardener to create living art that supports wildlife, captures carbon, and nourishes the soul. Through hands-on workshops, heirloom seed collection, and free design guides (including our 78k+ word gardening bible), we break barriers to joyful, climate-adaptive gardening.</p>
+      </div>
+      <div class="story-card">
+        <div class="story-icon">🤝🌍</div>
+        <h3>Roots in Community</h3>
+        <p>From schoolyard red-yellow vegetable patches to senior center container gardens, we’ve donated 12,000+ plants. Partnering with <strong>The Pollinator Partnership</strong> and <strong>Red & Yellow Growers Alliance</strong>, we advance equity in green spaces. Every purchase or free download helps fund urban gardening grants.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- philosophy section with unique details -->
+  <div class="testimonial-block">
+    <p style="font-size:1.3rem; font-weight:600;">🌺 “Gardening in red and yellow isn’t just about striking contrasts — it’s about celebrating the energy of sunrise, the warmth of harvest, and the courage to stand out. We’re cultivating a movement.” — Maya Redfern, Founder</p>
+    <div class="accent-border" style="margin-top:0.8rem;"></div>
+  </div>
+
+  <div>
+    <h2 class="section-title">🍂 Our Gardening Philosophy: The Scarlet & Gold Way</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
+      <div style="flex: 1; min-width: 240px;">
+        <p><strong class="highlight-red">🔥 Color with purpose</strong> — Red signifies courage and vitality; yellow evokes optimism and creativity. We design gardens that spark joy, increase pollinator visits by over 34%, and thrive in heat.</p>
+        <p style="margin-top: 1rem;"><strong class="highlight-red">🌿 Regenerative soil care</strong> — No synthetic chemicals. Only compost, biochar, and crimson clover cover crops. Healthy earth = luminous blooms.</p>
+      </div>
+      <div style="flex: 1; min-width: 240px;">
+        <p><strong class="highlight-yellow">🐝 Wildlife-first design</strong> — Every red penstemon or goldenrod we plant supports hummingbirds, native bees, and butterflies. Our gardens are certified wildlife corridors.</p>
+        <p style="margin-top: 1rem;"><strong class="highlight-yellow">🧠 Accessible education</strong> — We translate complex horticulture into simple, actionable steps. From balcony planters to acre-scale sanctuaries, everyone deserves fiery beauty.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Meet the gardeners: unique team section with human touch -->
+  <h2 class="section-title" style="margin-top: 2.5rem;">👩‍🌾 The Hearts Behind YardNirvana</h2>
+  <div class="team-gallery">
+    <div class="team-member">
+      <div class="team-avatar">🌻</div>
+      <h4>Maya Redfern</h4>
+      <p>Founder & Head Horticulturist</p>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem;">"Red roses & golden rudbeckia run in my veins — 20 years of creating living fire."</p>
+    </div>
+    <div class="team-member">
+      <div class="team-avatar">🌿</div>
+      <h4>Elias Gold</h4>
+      <p>Director of Sustainable Design</p>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem;">Pioneer in xeriscape with scarlet yucca & desert marigolds. LEED certified.</p>
+    </div>
+    <div class="team-member">
+      <div class="team-avatar">🐞</div>
+      <h4>Dr. Leilani Cruz</h4>
+      <p>Plant Ecologist & Seed Steward</p>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem;">Preserving 150+ heirloom red & yellow varieties; pollinator health advocate.</p>
+    </div>
+    <div class="team-member">
+      <div class="team-avatar">✂️</div>
+      <h4>Samir Kapoor</h4>
+      <p>Community Outreach + Workshops</p>
+      <p style="font-size: 0.85rem; margin-top: 0.5rem;">Leads "Fireflower Fellowship" — urban gardening in red & yellow containers.</p>
+    </div>
+  </div>
+
+  <!-- massive unique content block: behind the scenes, impact numbers & sustainable practices (helps reinforce the depth of the brand) -->
+  <div class="text-block" style="background: #fffcf5; border-radius: 32px; padding: 2rem; margin: 2.5rem 0; border: 1px solid #ffe2b5;">
+    <h2 class="section-title" style="border-left-color: var(--golden-yellow); margin-top: 0;">📊 Our Impact By The Numbers (Red & Yellow Lens)</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap: 1.5rem; margin: 1.5rem 0;">
+      <div><span style="font-size: 2rem; font-weight:800; color:var(--fire-red);">178+</span><br>community gardens redesigned</div>
+      <div><span style="font-size: 2rem; font-weight:800; color:var(--golden-yellow);">24k+</span><br>red & yellow trees planted</div>
+      <div><span style="font-size: 2rem; font-weight:800; color:var(--fire-red);">89%</span><br>pollinator increase in our gardens</div>
+      <div><span style="font-size: 2rem; font-weight:800; color:var(--golden-yellow);">350+</span><br>free workshops hosted</div>
+    </div>
+    <p>Since 2012, we’ve diverted 42 tons of organic waste into compost for red/yellow display gardens. Our <strong class="highlight-red">Sunset Rewilding Project</strong> restored 14 acres of degraded land using native red-berried elder and golden currant. We measure success by soil organic matter increase (2.7% to 7.1% avg) and the number of hummingbird sightings per garden mile. YardNirvana Greens also established the first <strong>“Fire & Gold” seed library</strong>, preserving cultivars like heritage 'Bloody Butcher' corn and 'Moonflower' marigold.</p>
+    <p>🔸 <strong>Carbon-smart gardening: </strong> Our recommended red maple and yellow poplar mix sequesters 220 lbs CO2 per decade per tree. Combined with red twig dogwood for hedgerows, we help mitigate urban heat islands. Every paid class or merchandise purchase funnels 10% into <em>Youth Flamekeeper Scholarship</em> — training next-gen diverse gardeners.</p>
+  </div>
+
+  <!-- additional unique storytelling: 'why red & yellow' extended manifesto -->
+  <div class="text-block" style="background: #fff9ef; border-radius: 32px; padding: 2rem;">
+    <h2 class="section-title">🎨 Why Red & Yellow? The Philosophy of Chromatic Horticulture</h2>
+    <p>We believe gardens should be unapologetically joyful. Red ignites the senses, beckoning hummingbirds and creating dramatic focal points. Yellow lifts the spirit, mimicking sunlight even on overcast days. Together, they form a dynamic duo: <strong>psychological warmth, pollinator magnet, and ecological resilience</strong>. Studies by our research partners reveal that red-yellow borders have 40% fewer pest outbreaks due to increased beneficial predator presence (ladybugs love yellow, and lacewings are drawn to red nectar guides). Culturally, red and yellow appear in festive traditions worldwide — from Diwali marigolds to Chinese New Year peonies. YardNirvana Greens celebrates this universal language of hope and passion.</p>
+    <p>Our signature “Ember & Honey” design framework has been featured in <em>Garden Design Journal</em> and <em>Permaculture North America</em>. It incorporates not only flowers but also red-twig dogwood, golden hakone grass, and edible layers: red okra, ‘Sunray’ tomatoes, and yellow pattypan squash. We invite you to explore our online encyclopedia and free resources to bring this energy to your own plot — no matter how small.</p>
+    <div class="accent-border"></div>
+    <p style="margin-top: 1rem;">🌱 <strong>Join our mission</strong> — become a YardNirvana Greens Ambassador: receive a special red & yellow starter seed pack and exclusive guides. Visit our HQ (address below) for the annual Fireflower Festival every August.</p>
+  </div>
+
+  <!-- Our sustainable promise & future direction -->
+  <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin: 2rem 0;">
+    <div style="flex: 1; background: linear-gradient(120deg, #fff2e0, #fffae6); border-radius: 28px; padding: 1.8rem;">
+      <h3 style="color: var(--fire-red); font-size: 1.6rem;">♻️ Zero-Waste Nursery</h3>
+      <p>Our on-site nursery uses only compostable pots, reclaimed water, and solar-powered greenhouses. We propagate over 200 red/yellow varieties without peat moss, using coir and leaf mold. Every plant sold supports habitat restoration.</p>
+    </div>
+    <div style="flex: 1; background: linear-gradient(120deg, #fff2e0, #fffae6); border-radius: 28px; padding: 1.8rem;">
+      <h3 style="color: var(--golden-yellow); font-size: 1.6rem;">📚 Open-Source Wisdom</h3>
+      <p>Our 78k+ word digital gardening bible is completely free, with no paywalls — because knowledge grows healthy communities. We update monthly with new case studies, climate adaptations, and DIY projects.</p>
+    </div>
+    <div style="flex: 1; background: linear-gradient(120deg, #fff2e0, #fffae6); border-radius: 28px; padding: 1.8rem;">
+      <h3 style="color: var(--fire-red); font-size: 1.6rem;">🌞 2030 Vision</h3>
+      <p>Establish 100 "Red-Yellow Resilience Corridors" across North America, each linking schools, parks, and urban farms to support migratory pollinators and climate readiness. We're halfway there — join the flame!</p>
+    </div>
+  </div>
+
+  <!-- Media mentions / testimonials with gardening community resonance -->
+  <div class="testimonial-block" style="background: #fff6ea;">
+    <p style="font-style: normal; font-weight: 700; font-size: 1.3rem;">🌟 What Gardeners Say</p>
+    <p>“YardNirvana Greens transformed my boring backyard into a red-and-yellow paradise. The attention to soil health and pollinator support is unmatched! My golden zinnias are buzzing with life.” — <strong>Clara M., California</strong></p>
+    <p style="margin-top: 1rem;">“The most unique and passionate plant resource I've ever found. Their guides on red & yellow combination saved my cut-flower business — I saw a 50% increase in butterfly visits!” — <strong>River O., Vermont</strong></p>
+    <div class="accent-border"></div>
+    <p><span class="highlight-yellow">⭐ Rated 4.97/5 from 1,200+ community reviews</span> — Trusted by master gardeners, landscape designers and beginners alike.</p>
+  </div>
+
+  <!-- final note: invitation + location + contact synergy with footer, but aligned with about page spirit -->
+  <div style="background: #ffffffd9; border-radius: 36px; padding: 1.5rem 2rem; margin-top: 1rem; text-align: center; border: 1px solid var(--golden-yellow);">
+    <p style="font-size: 1.2rem;"><span class="highlight-red">🌻 Visit our demonstration garden</span> — open daily dawn to dusk at our headquarters. See 70+ red & yellow themed beds, from tropical cannas to desert marigolds. Free entry & guided tours on weekends.</p>
+    <p style="margin-top: 0.8rem;"><strong class="highlight-yellow">📞 Have a question about red/yellow gardening?</strong> Call <a href="tel:+18885573342">+1 (888) 557-3342</a> or email hello@yardnirvanagreens.com — our team of fiery gardeners is ready to help!</p>
+  </div>
+</div>
+
+<!-- Footer exactly as per original spec -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-address">
+      <h4>📍 YardNirvana Greens HQ</h4>
+      <p>142 Blossom Grove Lane, Suite A<br>Willowdale, Meadowridge County, CA 94025<br>United States</p>
+    </div>
+    <div class="footer-contact">
+      <h4>📞 Contact & Support</h4>
+      <p>Phone: <a href="tel:+18885573342">+1 (888) 557-3342</a><br>Email: hello@yardnirvanagreens.com<br>Mon-Fri 9am–6pm PST</p>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2026 YardNirvana Greens — Cultivating Radiance Since 2012. All rights reserved. 🌱 Red & Yellow Theme.
+  </div>
+</footer>
+</body>
+</html>

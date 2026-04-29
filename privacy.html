@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>YardNirvana Greens | Privacy Policy – Your Data, Our Trust</title>
+  <meta name="description" content="Privacy Policy of YardNirvana Greens. Learn how we collect, use, and protect your personal information. Gardening with respect & transparency.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: linear-gradient(145deg, #fff9ef 0%, #fff3e0 100%);
+      color: #2d2418;
+      line-height: 1.5;
+    }
+
+    :root {
+      --fire-red: #c22b1f;
+      --golden-yellow: #f5b81b;
+      --deep-amber: #b45309;
+      --warm-sand: #fff1cf;
+      --burnt-red: #9f2a1f;
+      --sunray: #ffd966;
+      --soil-brown: #4a3520;
+    }
+
+    /* header identical to main site */
+    .top-bar {
+      background: var(--fire-red);
+      color: white;
+      padding: 0.6rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      font-weight: 500;
+      gap: 1rem;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fff0b5, #ffe3a3);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+    .logo span {
+      color: var(--golden-yellow);
+      background: none;
+      -webkit-background-clip: unset;
+      background-clip: unset;
+      text-shadow: none;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: 0.2s;
+      border-bottom: 2px solid transparent;
+    }
+    .nav-links a:hover {
+      border-bottom-color: var(--golden-yellow);
+      color: #ffe2a4;
+    }
+    .nav-links li {
+      display: inline-block;
+      list-style: none;
+    }
+
+    /* hero subpage (privacy header) */
+    .hero-sub {
+      background: linear-gradient(107deg, var(--golden-yellow) 0%, #ffcc4d 100%);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      border-bottom: 5px solid var(--fire-red);
+    }
+    .hero-sub h1 {
+      font-size: 2.8rem;
+      color: var(--fire-red);
+      text-shadow: 2px 2px 0 rgba(255,215,0,0.5);
+      margin-bottom: 0.75rem;
+    }
+    .hero-sub p {
+      font-size: 1.2rem;
+      max-width: 750px;
+      margin: 0 auto;
+      color: #2c241a;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* Privacy card style (clean, readable, consistent with contact design) */
+    .privacy-card {
+      background: #fffcf5;
+      border-radius: 36px;
+      padding: 2.5rem;
+      box-shadow: 0 20px 35px rgba(0,0,0,0.05);
+      border: 1px solid #ffe2b5;
+      margin: 2rem 0;
+    }
+    .privacy-card h2 {
+      font-size: 1.9rem;
+      color: var(--fire-red);
+      margin-top: 1.8rem;
+      margin-bottom: 1rem;
+      border-left: 6px solid var(--golden-yellow);
+      padding-left: 1rem;
+    }
+    .privacy-card h2:first-of-type {
+      margin-top: 0;
+    }
+    .privacy-card h3 {
+      font-size: 1.4rem;
+      color: var(--deep-amber);
+      margin: 1.5rem 0 0.5rem 0;
+    }
+    .privacy-card p, .privacy-card li {
+      font-size: 1.02rem;
+      margin-bottom: 0.75rem;
+      color: #3e2c1c;
+      line-height: 1.6;
+    }
+    .privacy-card ul, .privacy-card ol {
+      margin-left: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .privacy-card li {
+      margin-bottom: 0.4rem;
+    }
+    .privacy-card strong {
+      color: var(--burnt-red);
+    }
+    .badge-note {
+      background: #fff1cf;
+      padding: 1rem 1.5rem;
+      border-radius: 28px;
+      margin: 1.5rem 0;
+      border-left: 5px solid var(--fire-red);
+      font-size: 0.95rem;
+    }
+    .last-updated {
+      font-style: italic;
+      font-size: 0.85rem;
+      text-align: right;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ffdea5;
+      color: #7a5d3c;
+    }
+    .footer {
+      background: #2d1f12;
+      color: #ffecb3;
+      padding: 2.5rem 2rem;
+      margin-top: 3rem;
+      border-top: 6px solid var(--golden-yellow);
+    }
+    .footer-content {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .footer-address h4, .footer-contact h4 {
+      color: var(--golden-yellow);
+      margin-bottom: 0.7rem;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+    }
+    a {
+      color: var(--golden-yellow);
+      text-decoration: none;
+    }
+    .garden-badge {
+      background: #fef1cf;
+      padding: 0.3rem 0.9rem;
+      border-radius: 50px;
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 700px) {
+      .hero-sub h1 { font-size: 2rem; }
+      .top-bar { flex-direction: column; text-align: center; }
+      .nav-links a { margin: 0 0.6rem; }
+      .privacy-card { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="logo">🌿 YardNirvana <span>Greens</span></div>
+  <div class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="terms.html">Terms Of Privacy</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+    <li><a href="cookies.html">Cookies Policy</a></li>
+  </div>
+</div>
+
+<section class="hero-sub">
+  <h1>🔒 Rooted in Transparency</h1>
+  <p>Your privacy is sacred — just like a thriving garden. At YardNirvana Greens, we protect your personal data with the same care we give to our heirloom seeds. Read our Privacy Policy to understand how we cultivate trust.</p>
+  <div class="garden-badge" style="margin-top: 1rem;">🌱 Effective since: Jan 1, 2025 | GDPR & CCPA compliant 🌻</div>
+</section>
+
+<div class="container">
+  <div class="privacy-card">
+    <h2>🌿 Our Promise to You</h2>
+    <p>YardNirvana Greens (“we”, “us”, “our”) values the relationship with our gardening community. This Privacy Policy describes how we collect, use, store, and protect information when you visit our website (<strong>yardnirvanagreens.com</strong>), interact with our customer support, purchase plants or attend workshops. We are committed to maintaining the highest standards of data protection and transparency inspired by nature’s integrity.</p>
+    
+    <div class="badge-note">
+      🌼 <strong>Quick summary:</strong> We collect only the information necessary to enhance your gardening journey — from sending seasonal planting guides to processing orders. We never sell your data. Ever.
+    </div>
+
+    <h2>📋 1. Information We Collect</h2>
+    <p>We may collect the following categories of personal data:</p>
+    <ul>
+      <li><strong>Identity & Contact Data:</strong> Name, email address, phone number, postal address (if you order plants or request a consultation).</li>
+      <li><strong>Garden Profile Data:</strong> Your gardening zone, plant preferences, project details, photos you share (with consent) for design consultations.</li>
+      <li><strong>Transaction Data:</strong> Payment details for nursery purchases, workshop registrations – processed via secure third-party gateways (Stripe/PayPal). We do not store full credit card details.</li>
+      <li><strong>Technical Data:</strong> IP address, browser type, device identifiers, and usage analytics (via cookies – see our <a href="cookies.html">Cookies Policy</a>).</li>
+      <li><strong>Communication Data:</strong> Any messages you send via contact forms, email, or social media – used solely to assist your gardening needs.</li>
+    </ul>
+
+    <h2>🌱 2. How We Use Your Information</h2>
+    <p>Every data practice serves a purpose aligned with our mission: helping your red & yellow garden thrive. We use your data for:</p>
+    <ul>
+      <li>Responding to inquiries, providing personalized gardening advice, and supporting plant health troubleshooting.</li>
+      <li>Processing orders for seeds, bulbs, and garden accessories (including delivery updates).</li>
+      <li>Sending occasional newsletters, seasonal care tips, and exclusive offers (you may opt out anytime).</li>
+      <li>Improving our website, content, and user experience – based on aggregate analytics.</li>
+      <li>Ensuring legal compliance and fraud prevention.</li>
+    </ul>
+    <p><strong>Legal basis (GDPR):</strong> contract performance, legitimate interest (improving services), and your explicit consent where required (e.g., marketing emails).</p>
+
+    <h2>🛡️ 3. Sharing & Third Parties</h2>
+    <p>YardNirvana Greens never sells, rents, or trades your personal information. We may share data only in these limited scenarios:</p>
+    <ul>
+      <li><strong>Service Providers:</strong> Trusted partners who help us operate (email delivery, payment processors, shipping carriers). They access only necessary data and must protect it.</li>
+      <li><strong>Legal Obligations:</strong> If required by law or to protect our rights, safety, or property (or that of our gardeners).</li>
+      <li><strong>Business Transfers:</strong> In the event of merger or acquisition, your data would remain subject to this privacy pledge.</li>
+    </ul>
+    <p>🌻 <strong>Third-party links:</strong> Our website may contain links to garden resources. We are not responsible for their privacy practices – please review their policies.</p>
+
+    <h2>🍪 4. Cookies & Tracking Technologies</h2>
+    <p>We use cookies to remember your preferences, analyze site traffic, and personalize content (like remembering your gardening zone). You can control cookies through browser settings. For detailed information, see our <a href="cookies.html">Cookies Policy</a>.</p>
+
+    <h2>🔐 5. Data Security & Retention</h2>
+    <p>We implement industry-standard safeguards: SSL encryption, access controls, regular security audits. Your information is stored on secure servers and retained only as long as necessary: for active customer relationships, legal obligations, or legitimate business needs (e.g., transaction records for 7 years). Inactive contact data is anonymized after 24 months unless you opt-in to ongoing communications.</p>
+    <div class="badge-note">
+      🌸 <strong>Your gardening journey matters:</strong> You can request access, correction, deletion, or portability of your data anytime. Just email us at <strong>privacy@yardnirvanagreens.com</strong>.
+    </div>
+
+    <h2>👧 6. Children’s Privacy</h2>
+    <p>Our website is intended for general audiences (16+). We do not knowingly collect personal information from children under 13. If you believe a child has provided us with data, please contact us, and we will delete it promptly.</p>
+
+    <h2>🌍 7. International Transfers</h2>
+    <p>YardNirvana Greens is based in the United States. If you access our site from outside the US, please be aware that your data may be transferred to and processed in the US. We ensure appropriate safeguards (Standard Contractual Clauses) for data transfers from the EEA/UK.</p>
+
+    <h2>✍️ 8. Your Rights & Choices</h2>
+    <p>Depending on your location, you may have the following privacy rights:</p>
+    <ul>
+      <li><strong>Right to Know & Access:</strong> Request details on what data we hold about you.</li>
+      <li><strong>Right to Correct:</strong> Update inaccurate or incomplete information.</li>
+      <li><strong>Right to Delete:</strong> Request erasure of your personal data (subject to exceptions).</li>
+      <li><strong>Right to Opt-Out:</strong> Unsubscribe from marketing emails via link in footer or by contacting us.</li>
+      <li><strong>Do Not Sell My Info:</strong> We do not sell personal data; but we honor the "Do Not Sell" signal under CCPA.</li>
+    </ul>
+    <p>To exercise any right, email <strong>privacy@yardnirvanagreens.com</strong> or call <strong>+1 (888) 557-3342</strong>. We will respond within 30 days – without discrimination.</p>
+
+    <h2>📅 9. Updates to This Privacy Policy</h2>
+    <p>We may update this policy occasionally to reflect new practices or legal requirements. Any material changes will be announced on our website and via email (if you subscribed). The “Last Updated” date below indicates the latest revision. Continued use of our services signifies acceptance of any updates.</p>
+
+    <h2>📬 10. Contact Our Data Garden Officer</h2>
+    <p>For any privacy-related questions or to file a complaint, please reach out to:</p>
+    <p><strong>YardNirvana Greens Privacy Team</strong><br>
+    142 Blossom Grove Lane, Suite A, Willowdale, Meadowridge County, CA 94025, United States<br>
+    Email: <a href="mailto:privacy@yardnirvanagreens.com" style="color:#c22b1f;">privacy@yardnirvanagreens.com</a><br>
+    Phone: <a href="tel:+18885573342" style="color:#c22b1f;">+1 (888) 557-3342</a> (ext. 701)</p>
+    <p>You also have the right to lodge a complaint with your local data protection authority (such as the ICO in the UK or CNIL in France). We are committed to resolving any concerns amicably.</p>
+
+    <div class="last-updated">
+      📅 Last Updated: April 15, 2026 | Version 2.3 – "The Heirloom Privacy Edition"
+    </div>
+  </div>
+
+  <!-- Additional section to mirror the "Why YardNirvana" trust signals -->
+  <div style="background: #fff1cf; border-radius: 32px; padding: 1.5rem; margin: 1rem 0 2rem; display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: space-between; align-items: center;">
+    <div>
+      <span style="font-size: 2rem;">🌿</span>
+      <strong style="color: #b44c09;">GDPR Ready & ePrivacy compliant</strong><br>Your data, your rules.
+    </div>
+    <div>
+      <span style="font-size: 2rem;">🍂</span>
+      <strong style="color: #b44c09;">No third-party data selling</strong><br>Ever. You have our gardener’s oath.
+    </div>
+    <div>
+      <span style="font-size: 2rem;">🏆</span>
+      <strong style="color: #b44c09;">Trusted by 12k+ gardeners</strong><br>4.97/5 rating in privacy transparency.
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-address">
+      <h4>📍 YardNirvana Greens HQ</h4>
+      <p>142 Blossom Grove Lane, Suite A<br>Willowdale, Meadowridge County, CA 94025<br>United States</p>
+    </div>
+    <div class="footer-contact">
+      <h4>📞 Contact & Support</h4>
+      <p>Phone: <a href="tel:+18885573342">+1 (888) 557-3342</a><br>Email: hello@yardnirvanagreens.com<br>Mon-Fri 9am–6pm PST</p>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2026 YardNirvana Greens — Cultivating Radiance Since 2012. All rights reserved. 🌱 Red & Yellow Theme | Privacy by Design, Rooted in Ethics.
+  </div>
+</footer>
+
+<!-- optional decorative script (ensures smooth scroll / no intrusive) -->
+<script>
+  // small interaction: add smooth scroll for anchor links (if internal)
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if(targetId !== '#') {
+        const target = document.querySelector(targetId);
+        if(target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  });
+</script>
+</body>
+</html>

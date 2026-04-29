@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>YardNirvana Greens | Terms of Service & User Agreement</title>
+  <meta name="description" content="YardNirvana Greens Terms of Service – binding agreement for use of our website, gardening resources, workshops, and community engagement. Last updated April 2026.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: linear-gradient(145deg, #fff9ef 0%, #fff3e0 100%);
+      color: #2d2418;
+      line-height: 1.5;
+    }
+
+    /* red & yellow theme core (matching about page) */
+    :root {
+      --fire-red: #c22b1f;
+      --golden-yellow: #f5b81b;
+      --deep-amber: #b45309;
+      --warm-sand: #fff1cf;
+      --burnt-red: #9f2a1f;
+      --sunray: #ffd966;
+      --soil-brown: #4a3520;
+    }
+
+    /* header & nav identical to main style */
+    .top-bar {
+      background: var(--fire-red);
+      color: white;
+      padding: 0.6rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      font-weight: 500;
+      gap: 1rem;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fff0b5, #ffe3a3);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+    .logo span {
+      color: var(--golden-yellow);
+      background: none;
+      -webkit-background-clip: unset;
+      background-clip: unset;
+      text-shadow: none;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: 0.2s;
+      border-bottom: 2px solid transparent;
+    }
+    .nav-links a:hover {
+      border-bottom-color: var(--golden-yellow);
+      color: #ffe2a4;
+    }
+
+    /* terms hero banner */
+    .terms-hero {
+      background: linear-gradient(120deg, #c22b1f 0%, #e07a2c 100%);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      border-bottom: 5px solid var(--golden-yellow);
+    }
+    .terms-hero h1 {
+      font-size: 2.8rem;
+      color: #fff2bf;
+      text-shadow: 2px 2px 0 #88281c;
+      margin-bottom: 0.6rem;
+    }
+    .terms-hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #fff5e3;
+      font-weight: 500;
+    }
+    .effective-date {
+      background: rgba(0,0,0,0.2);
+      display: inline-block;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      border-left: 7px solid var(--fire-red);
+      padding-left: 1rem;
+      margin: 2rem 0 1.5rem 0;
+      color: var(--soil-brown);
+    }
+
+    /* terms specific cards & content */
+    .terms-paper {
+      background: white;
+      border-radius: 32px;
+      padding: 2rem 2rem 2rem 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.05);
+      border: 1px solid #ffe2b5;
+    }
+
+    .terms-paper h2 {
+      color: var(--fire-red);
+      font-size: 1.8rem;
+      margin: 1.5rem 0 0.8rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .terms-paper h2:first-of-type {
+      margin-top: 0;
+    }
+    .terms-paper h3 {
+      color: #b45309;
+      margin: 1.2rem 0 0.6rem 0;
+      font-size: 1.3rem;
+    }
+    .terms-paper p, .terms-paper li {
+      color: #3e2e20;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    .terms-paper ul, .terms-paper ol {
+      margin: 1rem 0 1rem 2rem;
+    }
+    .highlight-red {
+      color: var(--fire-red);
+      font-weight: 700;
+    }
+    .highlight-yellow {
+      background: #fef1cf;
+      padding: 0.2rem 0.4rem;
+      border-radius: 12px;
+      color: #b9570c;
+      font-weight: 500;
+    }
+    .accent-border {
+      background: linear-gradient(90deg, var(--fire-red), var(--golden-yellow));
+      height: 4px;
+      width: 80px;
+      margin: 1rem 0;
+      border-radius: 4px;
+    }
+    .legal-note {
+      background: #fff9ef;
+      border-radius: 28px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-left: 6px solid var(--golden-yellow);
+      font-size: 0.95rem;
+    }
+    .back-to-top {
+      text-align: right;
+      margin-top: 2rem;
+    }
+    .back-to-top a {
+      background: var(--fire-red);
+      color: white;
+      padding: 0.5rem 1.2rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+      display: inline-block;
+    }
+    .back-to-top a:hover {
+      background: var(--burnt-red);
+      transform: translateY(-2px);
+    }
+
+    /* footer identical to original */
+    .footer {
+      background: #2d1f12;
+      color: #ffecb3;
+      padding: 2.5rem 2rem;
+      margin-top: 3rem;
+      border-top: 6px solid var(--golden-yellow);
+    }
+    .footer-content {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .footer-address h4, .footer-contact h4 {
+      color: var(--golden-yellow);
+      margin-bottom: 0.7rem;
+      font-size: 1.2rem;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #ddb76e;
+    }
+    a {
+      color: var(--golden-yellow);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .terms-hero h1 { font-size: 2rem; }
+      .nav-links a { margin: 0 0.6rem; }
+      .top-bar { flex-direction: column; text-align: center; }
+      .container { padding: 1.2rem; }
+      .terms-paper { padding: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="logo">🌿 YardNirvana <span>Greens</span></div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="terms.html">Terms Of Privacy</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="cookies.html">Cookies Policy</a>
+  </div>
+</div>
+
+<section class="terms-hero">
+  <h1>🌿 Terms of Service · User Agreement</h1>
+  <p>Read our binding terms, garden ethics, and the legal ground that cultivates trust & safety.</p>
+  <div class="effective-date"><span class="highlight-yellow">📅 Effective: April 24, 2026</span> | Last Revised: April 1, 2026</div>
+</section>
+
+<div class="container">
+  <div class="terms-paper">
+    <h2>1. Acceptance of Terms 🔥</h2>
+    <p>By accessing or using the YardNirvana Greens website (<strong class="highlight-red">yardnirvanagreens.com</strong>), including any subdomains, content, gardening guides, workshops, digital resources, or community forums, you agree to be bound by these Terms of Service (“Terms”) and our <a href="privacy.html">Privacy Policy</a>. If you do not agree to all provisions, please immediately discontinue use. YardNirvana Greens (“Company”, “we”, “us”, or “our”) reserves the right to update or modify these Terms at any time without prior notice, with changes becoming effective upon posting. Continued use after modifications constitutes acceptance.</p>
+    <div class="accent-border"></div>
+  </div>
+
+  <div class="terms-paper">
+    <h2>2. Our “Red & Yellow” Ethical Gardening Pledge 🌱</h2>
+    <p>YardNirvana Greens is devoted to sustainable, regenerative horticulture. While we share educational content and inspiration, you acknowledge that gardening involves inherent risks including plant toxicity, allergic reactions, soil-borne pathogens, and physical injury. All information, including planting guides, companion planting suggestions and color-themed designs (including “Scarlet & Gold” framework), is provided <strong class="highlight-red">“AS IS”</strong> for informational purposes. We encourage responsible, local climate-appropriate gardening and recommend consulting local extension services.</p>
+    <p><strong class="highlight-yellow">Community Conduct:</strong> Users interacting with our forums, comment sections, or social channels must maintain respectful dialogue. Hate speech, harassment, or anti-environmental rhetoric is strictly prohibited and may lead to permanent ban and, if required, legal action.</p>
+  </div>
+
+  <div class="terms-paper">
+    <h2>3. Intellectual Property & Content Ownership 📚</h2>
+    <p>All materials published on YardNirvana Greens — including textual guides, “78k+ word gardening bible”, design schematics, photographic images, infographics, video tutorials, seed library descriptions, and the “Ember & Honey” design framework — are proprietary intellectual property owned or licensed by YardNirvana Greens LLC. You may download, print, or share excerpts for <strong>personal, non-commercial use</strong> only, provided you retain all copyright notices. Any unauthorized reproduction, distribution, or commercial exploitation (including resale of our free open-source content without written permission) violates copyright and trademark laws. <span class="highlight-red">® YardNirvana Greens, “Scarlet & Gold Way”, “Fireflower Fellowship” are registered trademarks.</span></p>
+    <p>Users who upload content (e.g., garden photos, progress journals) to our platforms grant YardNirvana a perpetual, royalty-free, worldwide license to feature, promote, and distribute such content across our website, social media, and marketing materials, with credit given where feasible.</p>
+  </div>
+
+  <div class="terms-paper">
+    <h2>4. Digital Products, Workshops & E-Commerce Terms 💳</h2>
+    <p>YardNirvana Greens may offer paid online courses, workshop registrations, seeds, plants, and merchandise. All sales are final unless otherwise noted due to damaged goods or fulfillment errors. For live plants/seeds: due to perishability, claims for damaged or non-viable seeds must be submitted within <strong>7 days</strong> of delivery, including photo evidence. Workshop registrations may be transferred to another attendee up to 48 hours before event; cancellations made 14+ days in advance receive a full refund minus 10% processing fee. We do not guarantee germination rates because environmental factors vary, but we ensure ethically sourced, fresh inventory.</p>
+    <p>Pricing displayed in USD. We reserve the right to correct errors, modify prices, or cancel orders affected by stock discrepancies. Promotions such as the “Fire & Gold starter seed pack” are subject to availability.</p>
+  </div>
+
+  <div class="terms-paper">
+    <h2>5. User Obligations & Prohibited Activities 🚫</h2>
+    <p>By using our website, you agree NOT to:</p>
+    <ul>
+      <li>Upload malicious code, viruses, or interfere with site security or accessibility.</li>
+      <li>Scrape, data-mine, or use automated bots to extract our gardening content without explicit permission.</li>
+      <li>Misrepresent affiliation with YardNirvana Greens or impersonate team members (Maya Redfern, Elias Gold, etc.).</li>
+      <li>Engage in any activity that damages our reputation or violates environmental ethics contrary to our mission.</li>
+      <li>Use our content to promote synthetic pesticides or anti-pollinator practices.</li>
+    </ul>
+    <p>Violation may result in immediate termination of access, and legal remedies available under applicable laws (including California Civil Code).</p>
+  </div>
+
+  <div class="terms-paper">
+    <h2>6. Warranty Disclaimer & Limitation of Liability ⚖️</h2>
+    <p><strong class="highlight-red">No Warranty:</strong> YardNirvana Greens provides information, resources, and plant materials “as is” without warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not guarantee specific gardening results, plant survival, or that our advice will eliminate pests or diseases.</p>
+    <p><strong class="highlight-red">Limitation of Liability:</strong> To the maximum extent permitted by law, YardNirvana Greens, its owners, employees, or affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages (including lost profits, crop failure, personal injury, or property damage) arising out of or related to use of our website, services, or products, even if advised of the possibility. Total aggregate liability for any claim shall not exceed the amount paid by you to YardNirvana Greens in the preceding six months (or $50 if no purchase).</p>
+    <p>Some states do not allow the exclusion of certain warranties, so limitations may not fully apply. This does not affect statutory consumer rights.</p>
+  </div>
+
+  <div class="terms-paper">
+    <h2>7. Indemnification 🛡️</h2>
+    <p>You agree to defend, indemnify, and hold harmless YardNirvana Greens, its directors, employees, and garden ambassadors from any claims, liabilities, damages, losses, or expenses (including reasonable attorney fees) arising out of: (a) your violation of these Terms, (b) your misuse of garden content (including allergic reactions or injuries), (c) your violation of any third-party rights, or (d) any content you submit to our platforms.</p>
+  </div>
+
+  <div class="terms-paper">
+    <h2>8. Third-Party Links & External Resources 🔗</h2>
+    <p>Our website may contain links to independent organizations such as Pollinator Partnership, Red & Yellow Growers Alliance, or gardening supply partners. These are provided for convenience; YardNirvana Greens does not endorse or assume responsibility for content, privacy practices, or products of third-party websites. Your interactions with third parties are solely between you and them.</p>
+  </div>
+
+  <div class="terms-paper">
+    <h2>9. Termination & Suspension 🔒</h2>
+    <p>We reserve the right to suspend or terminate your access to any part of YardNirvana Greens services at our sole discretion, without notice, for conduct that violates these Terms or harms our community. Upon termination, you must cease all use of our proprietary content and delete any downloaded materials. Sections regarding intellectual property, indemnification, and limitation of liability survive termination.</p>
+  </div>
+
+  <div class="terms-paper">
+    <h2>10. Governing Law & Dispute Resolution 🏛️</h2>
+    <p>These Terms shall be governed by the laws of the State of California, without regard to conflict-of-law principles. Any dispute, claim, or controversy arising out of or related to these Terms or your use of YardNirvana Greens (except for small claims) shall be resolved exclusively through <strong>binding arbitration</strong> administered by the American Arbitration Association (AAA) in Willowdale County, California, in accordance with its Consumer Arbitration Rules. Each party shall bear its own costs, but YardNirvana will pay arbitration fees up to $5,000 for qualifying non-commercial users. You waive any right to a class action or jury trial.</p>
+    <p>Notwithstanding the above, YardNirvana may seek injunctive relief in any court of competent jurisdiction to protect its intellectual property or confidential information.</p>
+  </div>
+
+  <div class="terms-paper">
+    <h2>11. Additional Provisions for Community Gardens & Volunteers 👩‍🌾</h2>
+    <p>If you participate in our physical garden projects (e.g., Red-Yellow Resilience Corridors, Fireflower Fellowship), you agree to waive liability for ordinary risks associated with gardening (soil contact, tools, weather). All volunteers must sign separate liability waivers. Donations to our scholarship fund or plant-a-tree initiatives are non-refundable but tax-deductible to the extent allowed by law (EIN 82-4471932).</p>
+  </div>
+
+  <div class="legal-note">
+    <p>🔸 <strong class="highlight-red">Entire Agreement:</strong> These Terms, together with our Privacy Policy and Cookies Policy, constitute the entire agreement between you and YardNirvana Greens, superseding any prior agreements. If any provision is found unenforceable, the remaining provisions remain in full force and effect.</p>
+    <p>📧 <strong class="highlight-yellow">Questions?</strong> For legal inquiries or to request written permission for content usage, contact our compliance team: <strong>legal@yardnirvanagreens.com</strong> or call +1 (888) 557-3342, ext. 401. We aim to respond within 7 business days.</p>
+    <div class="accent-border"></div>
+    <p style="font-size: 0.9rem;">By using YardNirvana Greens, you acknowledge that you have read, understood, and agreed to be bound by these Terms. Happy & fiery gardening! 🔥🌿</p>
+  </div>
+
+  <!-- extra acknowledgment for red-yellow philosophy but legally sound -->
+  <div class="terms-paper" style="background: #fffcf5;">
+    <h2>🌻 Consent to Electronic Communications</h2>
+    <p>By providing your email address or using our contact forms, you consent to receive electronic communications from YardNirvana Greens regarding orders, events, newsletters, or garden updates. You may opt out anytime via unsubscribe link. Standard data rates may apply.</p>
+    <p><strong class="highlight-red">California Privacy Rights:</strong> Under the CCPA, California residents may request disclosure of categories of personal information collected. See our <a href="privacy.html">Privacy Policy</a> for details or email privacy@yardnirvanagreens.com.</p>
+  </div>
+
+  <div class="back-to-top">
+    <a href="#">⬆ Back to top of Terms</a>
+  </div>
+  <div style="text-align: center; margin: 1rem 0 0rem 0;">
+    <span class="stats-badge" style="background:#ffe6bb; border-radius:40px; padding:0.3rem 1.2rem;">⚖️ Version 2.4 – legally reviewed by GreenLaw Collective</span>
+  </div>
+</div>
+
+<!-- Footer (exact match from about page) -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-address">
+      <h4>📍 YardNirvana Greens HQ</h4>
+      <p>142 Blossom Grove Lane, Suite A<br>Willowdale, Meadowridge County, CA 94025<br>United States</p>
+    </div>
+    <div class="footer-contact">
+      <h4>📞 Contact & Support</h4>
+      <p>Phone: <a href="tel:+18885573342">+1 (888) 557-3342</a><br>Email: hello@yardnirvanagreens.com<br>Mon-Fri 9am–6pm PST</p>
+    </div>
+  </div>
+  <div class="copyright">
+    © 2026 YardNirvana Greens — Cultivating Radiance Since 2012. All rights reserved. 🌱 Red & Yellow Theme.
+  </div>
+</footer>
+
+<style>
+  .stats-badge {
+      background: #ffe6bb;
+      border-radius: 40px;
+      padding: 0.3rem 1rem;
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: var(--fire-red);
+  }
+  .nav-links li {
+    display: inline-block;
+    list-style: none;
+  }
+  .top-bar .nav-links li {
+    margin: 0;
+  }
+</style>
+</body>
+</html>
